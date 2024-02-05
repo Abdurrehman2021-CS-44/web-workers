@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Processing Application</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Web Workers</h1>
+      <h2 id="hi"></h2>
+      <h2 id="output"></h2>
+      <button id="btn1">Process Large Data with Web Worker</button>
+      <button id="btn2">Process Large Data without Web Worker</button>
+      <button id="btn3">Print Hi!</button>
+      <p id="instructions">
+        <h2>Instructions</h2>
+        Clicking <b>"Process Large Data with Web Worker"</b> allows simultaneous clicks on <b>"Print Hi"</b> due to web worker threading. 
+        Clicking <b>"Process Large Data without Web Worker"</b> may cause the screen to freeze temporarily, preventing clicks on <b>"Print Hi"</b>.
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
